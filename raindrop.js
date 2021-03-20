@@ -5,8 +5,8 @@ class Drop{
        
 }
         
-        this.body = Bodies.circle(x,y,10,options);
-        this.radius =10;
+        this.body = Bodies.circle(x,y,8,options);
+        this.radius =8;
         World.add(world,this.body);
 }
  raindrop(){
@@ -18,7 +18,7 @@ class Drop{
         var pos = this.body.position
         fill("blue");
         ellipseMode(CENTER); 
-        ellipse(this.body.position.x,this.body.position.y,this.diameter,this.diameter);
+        ellipse(this.body.position.x,this.body.position.y,this.radius);
         }
     
 }
